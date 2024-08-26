@@ -12,13 +12,18 @@
             margin: 0;
             padding: 0;
             font-family: 'Raleway', sans-serif;
-            background-color: #1a1a2e;
+            background: linear-gradient(120deg, #1a1a2e, #0f3460);
             color: #e3e3e3;
+            transition: background 1s ease;
+        }
+
+        body:hover {
+            background: linear-gradient(120deg, #16213e, #da9c4b);
         }
 
         header {
             background: #16213e;
-            color: #e94560;
+            color: #07d173;
             padding: 20px;
             text-align: center;
             position: fixed;
@@ -26,6 +31,7 @@
             z-index: 1000;
             top: 0;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+            transition: background 1s ease;
         }
 
         header h1 {
@@ -54,7 +60,7 @@
         }
 
         nav ul li a:hover {
-            color: #e94560;
+            color: #6ea11b;
         }
 
         .container {
@@ -67,7 +73,7 @@
             text-align: center;
             margin: 40px 0;
             font-size: 2.5em;
-            color: #e94560;
+            color: #0c0c0b;
             position: relative;
             animation: fadeIn 1s ease-in-out;
         }
@@ -77,7 +83,7 @@
             display: block;
             width: 100px;
             height: 4px;
-            background: #e94560;
+            background: #d47081;
             margin: 10px auto;
             border-radius: 5px;
         }
@@ -130,7 +136,7 @@
         }
 
         .skills .skill h3, .projects .project h3, .professional-enhancements .enhancement h3 {
-            color: #e94560;
+            color: #d47081;
             font-size: 1.5em;
             margin-bottom: 15px;
         }
@@ -146,7 +152,7 @@
         }
 
         .contact a {
-            color: #e94560;
+            color: #088803;
             text-decoration: none;
             font-weight: bold;
         }
@@ -165,7 +171,7 @@
 
         .interesting-fact h3 {
             margin-top: 0;
-            color: #e94560;
+            color: #d47081;
         }
 
         footer {
@@ -239,7 +245,7 @@
         <section id="about" class="about">
             <h2 class="section-title">About Me</h2>
             <img src="https://media.licdn.com/dms/image/v2/D5603AQEeoM5H5RJs8A/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1707285649233?e=1730332800&v=beta&t=K9-d-KY1_c_oDzG-DEMnX-1UGd17KxR9Vs1ijtIcrcY" alt="Vikash Pandey">
-            <p>Hello! I'm Vikash Pandey, Software Developer aspiring with good practice in java, sql and a foundation in computer networking, html, css, js. My journey includes completing the Full Stack Development course at Cipher Schools and obtaining certifications like CCNA, Java-OOPs and Oracle Cloud Infrastructure Generative AI Professional. I love building efficient, scalable web applications, Good prctice with wordpress, adobe and continually enhancing my skills.</p>
+            <p>Hello! I'm Vikash Pandey, an aspiring Software Developer with a solid foundation in Java, SQL, computer networking, HTML, CSS, and JavaScript. My journey includes completing a Full Stack Development course at Cipher Schools and earning certifications such as CCNA, Java OOPs, and Oracle Cloud Infrastructure Generative AI Professional. I am passionate about building efficient, scalable web applications and have hands-on experience with WordPress and Adobe. I am committed to continually enhancing my skills and staying at the forefront of technology.</p>
         </section>
 
         <section id="skills" class="skills">
@@ -259,11 +265,11 @@
             </div>
             <div class="skill">
                 <h3>Computer Networking (CCNA)</h3>
-                <p>Strong knowledge of network protocols, security, and administration.</p>
+                <p>Fundamental knowledge of network protocols, security, and administration.</p>
             </div>
             <div class="skill">
-                <h3>Portfolio</h3>
-                <p>Experienced in creating dynamic, responsive portfolio of myself.</p>
+                <h3>Sql</h3>
+                <p>Good in writing SQL queries to manage and analyze data efficiently..</p>
             </div>
             <div class="skill">
                 <h3>Full Stack Development (MERN)</h3>
@@ -314,7 +320,7 @@
                 <h3>Interesting Page</h3>
                 <p>"I'm always active on LinkedIn, where you can explore my professional journey and connect with me on <a href="https://www.linkedin.com/in/-vikash-pandey" target="_blank">Linked-in</a>!</p>
                 <p>For a closer look at my coding projects and contributions, visit my GitHub. Let's collaborate and create something amazing together!"on <a href="https://github.com/vikashpandey11" target="_blank">Github</a>!</p>
-                <p>I'm also a hobbyist photographer and love capturing landscapes in my free time. Check out my photography portfolio on <a href="https://www.instagram.com/vikashpande_y/" target="_blank">Instagram</a>!</p>
+                <p>I'm also a hobbyist photographer and love capturing moments in my free time. Check out my photography portfolio on <a href="https://www.instagram.com/vikashpande_y/" target="_blank">Instagram</a>!</p>
             </div>
         </section>
     </div>
@@ -328,3 +334,4 @@
 </body>
 
 </html>
+
