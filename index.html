@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vikash Pandey - Software Developer Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Raleway', sans-serif;
+            background-color: #1a1a2e;
+            color: #e3e3e3;
+        }
+
+        header {
+            background: #16213e;
+            color: #e94560;
+            padding: 20px;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+            top: 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            animation: slideInFromTop 1s ease-in-out;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #e3e3e3;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #e94560;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 120px auto 0 auto;
+            padding: 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            margin: 40px 0;
+            font-size: 2.5em;
+            color: #e94560;
+            position: relative;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 100px;
+            height: 4px;
+            background: #e94560;
+            margin: 10px auto;
+            border-radius: 5px;
+        }
+
+        .about p {
+            font-size: 1.2em;
+            line-height: 1.8;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        /* Image with Hover Effect */
+        .about img {
+            display: block;
+            margin: 20px auto;
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        .about img:hover {
+            transform: scale(1.1);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.7);
+        }
+
+        /* Skills, Projects, Enhancements */
+        .skills, .projects, .professional-enhancements {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .skills .skill, .projects .project, .professional-enhancements .enhancement {
+            flex: 1 1 30%;
+            background: #0f3460;
+            padding: 20px;
+            border-radius: 10px;
+            transition: transform 0.3s, background 0.3s;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            cursor: pointer;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        .skills .skill:hover, .projects .project:hover, .professional-enhancements .enhancement:hover {
+            transform: translateY(-10px);
+            background: #16213e;
+        }
+
+        .skills .skill h3, .projects .project h3, .professional-enhancements .enhancement h3 {
+            color: #e94560;
+            font-size: 1.5em;
+            margin-bottom: 15px;
+        }
+
+        .contact {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .contact p {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+
+        .contact a {
+            color: #e94560;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .contact a:hover {
+            text-decoration: underline;
+        }
+
+        .interesting-fact {
+            background: #0f3460;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .interesting-fact h3 {
+            margin-top: 0;
+            color: #e94560;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background: #16213e;
+            color: #e3e3e3;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* Animations */
+        @keyframes slideInFromTop {
+            0% {
+                transform: translateY(-100%);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .skills .skill, .projects .project, .professional-enhancements .enhancement {
+                flex: 1 1 100%;
+            }
+
+            nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+
+            nav ul {
+                padding: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Vikash Pandey</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#enhancements">Professional Enhancements</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section id="about" class="about">
+            <h2 class="section-title">About Me</h2>
+            <img src="https://media.licdn.com/dms/image/v2/D5603AQEeoM5H5RJs8A/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1707285649233?e=1730332800&v=beta&t=K9-d-KY1_c_oDzG-DEMnX-1UGd17KxR9Vs1ijtIcrcY" alt="Vikash Pandey">
+            <p>Hello! I'm Vikash Pandey, Software Developer aspiring with good practice in java, sql and a foundation in computer networking, html, css, js. My journey includes completing the Full Stack Development course at Cipher Schools and obtaining certifications like CCNA, Java-OOPs and Oracle Cloud Infrastructure Generative AI Professional. I love building efficient, scalable web applications, Good prctice with wordpress, adobe and continually enhancing my skills.</p>
+        </section>
+
+        <section id="skills" class="skills">
+            <h2 class="section-title">Skills</h2>
+            <div class="skill">
+                <h3>Java</h3>
+                <p>Experienced in Java programming, including creating desktop applications like Notepad Editor.</p>
+                
+            </div>
+            <div class="skill">
+                <h3>Oracle Cloud Infrastructure</h3>
+                <p>Certified in using Oracle Cloud services to build and deploy cloud applications.</p>
+            </div>
+            <div class="skill">
+                <h3>Python</h3>
+                <p>Skilled in scripting, automation, and backend development using Python.</p>
+            </div>
+            <div class="skill">
+                <h3>Computer Networking (CCNA)</h3>
+                <p>Strong knowledge of network protocols, security, and administration.</p>
+            </div>
+            <div class="skill">
+                <h3>Portfolio</h3>
+                <p>Experienced in creating dynamic, responsive portfolio of myself.</p>
+            </div>
+            <div class="skill">
+                <h3>Full Stack Development (MERN)</h3>
+                <p>Proficient in building web applications using MongoDB, Express.js, React.js, and Node.js.</p>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+
+            <h2 class="section-title">Projects</h2>
+            <div class="project">
+                <h3>Notepad Editor (Java)</h3>
+                <p>Developed a simple text editor using Java that replicates the functionality of Windows Notepad.</p>
+            </div>
+            <div class="project">
+                <h3>Automated Email System (Python)</h3>
+                <p>Created a Python script that automates email sending, including attachments and dynamic content.</p>
+            </div>
+            
+            <!-- Additional space for more projects -->
+            <div class="project">
+                <h3>Portfolio</h3>
+                <p>Created my portfolio with html, css.</p>
+            </div>
+            <div class="project">
+                <h3>Employee-Management-System-EMS</h3>
+                <p>Designed Employee-Management-System-EMS as a project using java.</p>
+            </div>
+        </section>
+
+        <section id="enhancements" class="professional-enhancements">
+            <h2 class="section-title">Professional Enhancements</h2>
+            <div class="enhancement">
+                <h3>Oracle Cloud Infrastructure 2024 Generative AI Certified Professional</h3>
+                <p>Achieved certification in Oracle Cloud Infrastructure with a focus on generative AI technologies.</p>
+            </div>
+            <div class="enhancement">
+                <h3>Password Security Enhancement (Goldman Sachs Internship)</h3>
+                <p>Enhanced password security protocols during a virtual internship at Goldman Sachs.</p>
+            </div>
+            <!-- Add more enhancements if needed -->
+        </section>
+
+        <section id="contact" class="contact">
+            <h2 class="section-title">Contact Me</h2>
+            <p>Interested in collaborating or have a question? Reach out via email at <a href="vikashpandeyg5001@gmail.com">vikashpandeyg5001@gmail.com</a>.</p>
+            <div class="interesting-fact">
+                <h3>Interesting Page</h3>
+                <p>"I'm always active on LinkedIn, where you can explore my professional journey and connect with me on <a href="https://www.linkedin.com/in/-vikash-pandey" target="_blank">Linked-in</a>!</p>
+                <p>For a closer look at my coding projects and contributions, visit my GitHub. Let's collaborate and create something amazing together!"on <a href="https://github.com/vikashpandey11" target="_blank">Github</a>!</p>
+                <p>I'm also a hobbyist photographer and love capturing landscapes in my free time. Check out my photography portfolio on <a href="https://www.instagram.com/vikashpande_y/" target="_blank">Instagram</a>!</p>
+            </div>
+        </section>
+    </div>
+
+
+
+    <footer>
+        <p>&copy; 2024 Vikash Pandey. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
